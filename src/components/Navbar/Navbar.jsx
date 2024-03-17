@@ -1,38 +1,35 @@
-import { useState } from 'react';
-import React from 'react';
+import React, { Component } from 'react';
 import './navbar.css';
 
-const Links = () => {
-  return (
-  <div>
+class Navbar extends Component {
+  state = { clicked: false };
 
-    <p><a href='#home'>Home</a></p>
-    <p><a href='#about'>About</a></p>
-    <p><a href='#projects'>Projects</a></p>
-    <p><a href='#footer'>Contacts</a></p>
-  </div>  
-  )
-}
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  }
 
-const Navbar = () => {
-  return (
-    <div className='Navbar'>
-      
-      <div className='navbar__logo-link'>
-        <p><a href='#'>JF Marticio</a></p>
+  render() {
+    return (
+      <div className='Navbar'>
+        <div className='Navbar__logo-link'>
+          <a href='#me'>JF Marticio</a>
+        </div>
+
+        <div className='Navbar__menu'>
+          <ul className={this.state.clicked ? 'navbar active' : 'navbar'}>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#contacts'>Contacts</a></li>
+          </ul>
+        </div>
+
+        <div className='mobile' onClick={this.handleClick}>
+          <i className={this.state.clicked ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}> </i>
+        </div>
       </div>
-
-      <div className='navbar__dropdown-menu'>
-        <Links />
-      </div>
-      <div className='navbar__links-container'>
-        <p><a href='#home'>Home</a></p>
-        <p><a href='#about'>About</a></p>
-        <p><a href='#projects'>Projects</a></p>
-        <p><a href='#footer'>Contacts</a></p>
-      </div> 
-    </div>
-  )
+    );
+  }
 }
 
 export default Navbar;
