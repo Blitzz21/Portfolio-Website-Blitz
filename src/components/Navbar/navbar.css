@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: white;
+    background-color: #1f1f1f;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
 }
 
 a {
-    color: #000;
+    color: #efefef;
 }
 
 .Navbar a {
@@ -60,7 +60,7 @@ a {
 }
 
 .Navbar a:hover{
-    background-color: #bebebe;
+    background-color: #648cb9;
     transition: 0.3s ease-in-out;
 }
 

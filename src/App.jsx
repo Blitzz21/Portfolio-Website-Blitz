@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Navbar, Greetings, About, Projects, CTA, Footer } from './components';
+import { Navbar, Greetings, About, Timeline, Projects, Footer } from './components';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <Navbar />
         <Greetings />
         <About />
-        <CTA />
+        <Timeline />
         <Projects />
         <Footer />
     </div>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.About {
+    background-image: url('./bg/bg (2).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.About p {
+    padding: 25px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.About h1 {
+    padding: 25px;
+    color: #efefef;
+}
+
+.About__about-me-section {
+    display: flex;
+    flex-wrap: wrap;
+    color: #efefef;
+}
+
+.About__tech-stack{
+    display: block;
+    width: 30%;
+    margin-right: 20px;
+   
+
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.About__tech-stack_icons { 
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .About__tech-stack_icons img {
+    scale: 40%;
+    margin: -20px;
+    transition: all 0.3s ease-in-out;
+
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+
+  .About__tech-stack_icons img:hover {
+    scale: 55%;
+    cursor: pointer;
+  }
+
+  .About__education {
+    position: relative;
+    max-width: 1200px;
+    margin: 300px auto;
+  }
+
+  .timeline-container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: #1f1f1f;
+  }
+
+  .timeline-textbox {
+    padding: 20px 30px;
+    position: relative;
+    color: #efefef;
+    font-size: 1.1rem;
+  }
+
+  .timeline-container:nth-child(even), .timeline-container i:nth-child(even) {
+    left: 0;
+  }
+
+  .timeline-container:nth-child(odd), .timeline-container i:nth-child(odd) {
+    left: 50%;
+  }
+
+  .timeline-container i {
+    right: 0;
+    left: auto;
+  }
