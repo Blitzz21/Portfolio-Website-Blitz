@@ -4,12 +4,17 @@
 }
 
 .About {
-    background-image: url('./bg/bg (2).jpg');
+    background-image: url('bg/bg (2).jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     padding-bottom: 25px;
+}
+
+.About .About__title {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .About p {
@@ -32,11 +37,14 @@
     color: #efefef;
 }
 
+.About__about-me-section .h1, h1 {
+  font-size: 1.4rem;
+}
+
 .About__tech-stack{
     display: block;
     width: 30%;
     margin-right: 20px;
-   
 
     background: rgba(255,255,255,0.05);
     -webkit-backdrop-filter: blur(3px);
@@ -63,6 +71,7 @@
 
   .About__tech-stack_icons img:hover {
     scale: 55%;
+    transition: all 0.3s;
     cursor: pointer;
   }
 
@@ -72,29 +81,59 @@
     margin: 300px auto;
   }
 
-  .timeline-container {
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-    background: #1f1f1f;
+  
+  @media screen and (max-width: 1200px) {
+    .About {
+      padding: 25px;
+    }
+
+    .About p {
+      font-size: 1rem;
+    }
+
+    .About > h1 {
+      padding: 15px;
+      font-weight: 900;
+    }
+
+    .About__tech-stack {
+      margin-top: 20px;
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .About__tech-stack_icons img {
+      scale: 45%;
+      margin: -10px;
+    }
   }
 
-  .timeline-textbox {
-    padding: 20px 30px;
-    position: relative;
-    color: #efefef;
-    font-size: 1.1rem;
-  }
+@media screen and (max-width: 768px) {
+    .About {
+      padding-bottom: 10px;
+    }
 
-  .timeline-container:nth-child(even), .timeline-container i:nth-child(even) {
-    left: 0;
-  }
+    .About p {
+      padding: 10px;
+      font-size: 0.8rem;
+    }
 
-  .timeline-container:nth-child(odd), .timeline-container i:nth-child(odd) {
-    left: 50%;
-  }
+    .About ~ h1 {
+      padding: 10px;
+      font-size: 2rem;
+    }
 
-  .timeline-container i {
-    right: 0;
-    left: auto;
-  }
+    .About__tech-stack {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .About__tech-stack h1 {
+      font-size: 1.2rem;
+    }
+
+    .About__tech-stack_icons img {
+      scale: 45%;
+      margin: -5px;
+    }
+}

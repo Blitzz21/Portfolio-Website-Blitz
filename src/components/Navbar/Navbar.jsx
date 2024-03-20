@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
 import './navbar.css';
 
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 class Navbar extends Component {
+
+  const = () => {
+    useEffect(() => {
+      Aos.init({ duration: 1000, once: true })
+    }, []); }
+  
   state = { clicked: false };
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   }
-
   render() {
     return (
-      <div className='Navbar'>
+      <div data-aos="fade-down" className='Navbar'>
         <div className='Navbar__logo-link'>
           <a href='#me'>JF Marticio</a>
         </div>

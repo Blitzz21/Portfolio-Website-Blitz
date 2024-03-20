@@ -13,12 +13,10 @@
     align-items: center;
     justify-content: center;
     padding: 100px;
-    margin-top: 200px;
+    margin-top: 100px;
 
     font-family: "Poppins";
     line-height: 4.8rem;
-
-    
 }
 
 .Greetings__first-p,
@@ -64,4 +62,35 @@ button:hover {
     scale: 1.1;
     background-position: right center;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 5px 15px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .Greetings {
+        margin-top: 50px;
+    }
+
+    .p-container {
+        font-size: 2rem;
+    }
+
+    .Greetings__first-p,
+    .Greetings__second-p {
+        text-align: center;
+        line-height: 4rem;
+        font-size: 3rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 5px 5px;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -12,6 +12,7 @@ const Timeline = () => {
 
   return (
 <div className='body'>
+  <h1>My Timeline</h1>
   <div class="container">
     <div class="timeline">
       <ul>
@@ -43,6 +44,7 @@ const Timeline = () => {
             <h3 className="date">January 2024</h3>
             <h1>freeCodeCamp.org Certification</h1>
             <p>Certification for Responsive Web Design showing 300 hours of work done to this certificate.</p>
+            <a target='_blank' href="https://www.freecodecamp.org/certification/Blitzz21/responsive-web-design">| Link |</a>
           </div>
         </li>
       </ul>

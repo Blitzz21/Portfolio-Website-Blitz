@@ -19,14 +19,13 @@ const About = () => {
 
   return (
     <div className='About'>
-
-      <h1 data-aos="fade-right">About</h1>
+      <h1 className='About__title' data-aos="fade-right">About</h1>
 
         <section className='About__about-me-section'>
           <p data-aos="fade-right">I'm a 1st Year Computer Science Student at St. Mary's College of Tagum Inc. (SMCTI), Proffecient in HTML and CSS and starting to get acquainted to React, also with hands-on experience in SMCTI's Laboratory assignments, and plate projects. Able to produce expected outcome and determined to strive from the field of Web Development, eager to learn and gain work and freelance experience. Humble, polite, neat, oral communication, flexible and with good time management.
           </p>
-          <div className='About__tech-stack'>
-            <h1 data-aos="fade-left">My Technology Stack</h1>
+          <div data-aos="fade-left" className='About__tech-stack'>
+            <h1 >My Technology Stack</h1>
             <div className='About__tech-stack_icons'>
               <img data-aos="fade" src={reactLogo} alt="React Logo" />
               <img data-aos="fade" src={htmlLogo} alt="html Logo" />
