@@ -9,12 +9,12 @@ import javaLogo from '../About/icons/java.svg'
 import pythonLogo from '../About/icons/python.svg'
 
 import { useEffect } from 'react'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, once: true })
+    AOS.init({ duration: 2000, once: true })
   }, []);
 
   return (

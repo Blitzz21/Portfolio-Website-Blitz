@@ -4,6 +4,7 @@
 }
 
 .About {
+    overflow: hidden;
     background-image: url('bg/bg (2).jpg');
     background-position: center;
     background-size: cover;
