@@ -1,0 +1,77 @@
+.Projects {
+    overflow: hidden;
+}
+
+.Projects h1 {
+    padding-left: 25px;
+    padding-top: 35px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.Projects__card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Projects-card {
+    flex-shrink: 1;
+    flex-basis: auto;
+    flex-shrink: 2;
+    padding: 10px;
+    width: 325px;
+    height: auto;
+    margin: 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.Projects-card img {
+    width: 100%;
+    height: auto;
+}
+
+.Projects-card-content h3 {
+    padding-top: 5px;
+    font-size: 1.3rem;
+}
+
+.Projects-card-content p {
+    padding-top: 5px;
+    font-size: 0.8rem;
+}
+
+.Projects-card-techstack {
+    display: flex;
+    flex-direction: row;
+}
+
+.Projects-card-techstack p {
+    padding: 3px 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #efefef;
+    font-size: 0.8rem;
+}
+
+.Projects-card-techstack p:hover {
+    cursor: pointer;
+    background-color: #00a3ee;
+    color: #1f1f1f;
+}
+
+.Projects-card-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Projects-card-link a {
+    text-decoration: none;
+    color: #1f1f1f;
+}

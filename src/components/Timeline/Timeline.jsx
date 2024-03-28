@@ -11,9 +11,9 @@ const Timeline = () => {
   }, []);
 
   return (
-<div className='body'>
+<div className='Timeline__body'>
   <h1>My Timeline</h1>
-  <div class="container">
+  <div class="Timeline__container">
     <div class="timeline">
       <ul>
         <li data-aos="fade-right">

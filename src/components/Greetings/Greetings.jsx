@@ -11,7 +11,7 @@ const Greetings = () => {
   }, []);
 
   return (
-  <div className='Greetings'>
+  <div id='Home' className='Greetings'>
     <div data-aos="fade" className='p-container'>
       <p className='Greetings__first-p'>Hi, I'm John Floyd Marticio</p>
       <p className='Greetings__second-p'>I'm a, Freelance Web Developer.</p>
