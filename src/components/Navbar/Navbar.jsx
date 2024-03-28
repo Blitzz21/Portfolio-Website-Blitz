@@ -42,7 +42,7 @@ class Navbar extends Component {
           </ul>
 
           <ul className='navbar'>
-            <li><a href="#">JF Marticio</a></li>
+            <li><a href="https://github.com/Blitzz21">JF Marticio</a></li>
             <li className='hideOnMobile'><a href="#Home">Home</a></li>
             <li className='hideOnMobile'><a href="#About">About</a></li>
             <li className='hideOnMobile'><a href="#Projects">Projects</a></li>
