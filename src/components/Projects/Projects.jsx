@@ -26,77 +26,7 @@ const Projects = () => {
               <p>React</p><p>HTML</p><p>CSS</p><p>Javascript</p>
             </div>
             <div className='Projects-card-link'>
-              <a href="#" target='_blank'>View Code</a><a href="#" target='_blank'>Live View</a>
-            </div>
-          </div>  
-        </div>
-
-        <div data-aos="zoom-in" className="Projects-card">
-          <img src={Portfolio} alt="Portfolio" />
-          <div className="Projects-card-content">
-            <h3>Portfolio Webite (Ongoing)</h3>
-            <p>Developed using primarily ReactJS. Applied responsive web design techniques and UI/UX principles. A basic but functioning Porfolio Website.</p>
-            <div className="Projects-card-techstack">
-              <p>React</p><p>HTML</p><p>CSS</p><p>Javascript</p>
-            </div>
-            <div className='Projects-card-link'>
-              <a href="#" target='_blank'>View Code</a><a href="#" target='_blank'>Live View</a>
-            </div>
-          </div>  
-        </div>
-
-        <div data-aos="zoom-in" className="Projects-card">
-          <img src={Portfolio} alt="Portfolio" />
-          <div className="Projects-card-content">
-            <h3>Portfolio Webite (Ongoing)</h3>
-            <p>Developed using primarily ReactJS. Applied responsive web design techniques and UI/UX principles. A basic but functioning Porfolio Website.</p>
-            <div className="Projects-card-techstack">
-              <p>React</p><p>HTML</p><p>CSS</p><p>Javascript</p>
-            </div>
-            <div className='Projects-card-link'>
-              <a href="#" target='_blank'>View Code</a><a href="#" target='_blank'>Live View</a>
-            </div>
-          </div>  
-        </div>
-
-        <div data-aos="zoom-in" className="Projects-card">
-          <img src={Portfolio} alt="Portfolio" />
-          <div className="Projects-card-content">
-            <h3>Portfolio Webite (Ongoing)</h3>
-            <p>Developed using primarily ReactJS. Applied responsive web design techniques and UI/UX principles. A basic but functioning Porfolio Website.</p>
-            <div className="Projects-card-techstack">
-              <p>React</p><p>HTML</p><p>CSS</p><p>Javascript</p>
-            </div>
-            <div className='Projects-card-link'>
-              <a href="#" target='_blank'>View Code</a><a href="#" target='_blank'>Live View</a>
-            </div>
-          </div>  
-        </div>
-
-        <div data-aos="zoom-in" className="Projects-card">
-          <img src={Portfolio} alt="Portfolio" />
-          <div className="Projects-card-content">
-            <h3>Portfolio Webite (Ongoing)</h3>
-            <p>Developed using primarily ReactJS. Applied responsive web design techniques and UI/UX principles. A basic but functioning Porfolio Website.</p>
-            <div className="Projects-card-techstack">
-              <p>React</p><p>HTML</p><p>CSS</p><p>Javascript</p>
-            </div>
-            <div className='Projects-card-link'>
-              <a href="#" target='_blank'>View Code</a><a href="#" target='_blank'>Live View</a>
-            </div>
-          </div>  
-        </div>
-
-        <div data-aos="zoom-in" className="Projects-card">
-          <img src={Portfolio} alt="Portfolio" />
-          <div className="Projects-card-content">
-            <h3>Portfolio Webite (Ongoing)</h3>
-            <p>Developed using primarily ReactJS. Applied responsive web design techniques and UI/UX principles. A basic but functioning Porfolio Website.</p>
-            <div className="Projects-card-techstack">
-              <p>React</p><p>HTML</p><p>CSS</p><p>Javascript</p>
-            </div>
-            <div className='Projects-card-link'>
-              <a href="#" target='_blank'>View Code</a><a href="#" target='_blank'>Live View</a>
+              <a href="https://github.com/Blitzz21/Portfolio-Website-Blitz" target='_blank'>View Code</a><a href="https://portfolio-website-blitz.vercel.app/" target='_blank'>Live View</a>
             </div>
           </div>  
         </div>
