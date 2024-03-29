@@ -20,8 +20,8 @@ const Projects = () => {
         <div data-aos="zoom-in" className="Projects-card">
           <img src={Portfolio} alt="Portfolio" />
           <div className="Projects-card-content">
-            <h3>Portfolio Webite (Ongoing)</h3>
-            <p>Developed using primarily ReactJS. Applied responsive web design techniques and UI/UX principles. A basic but functioning Porfolio Website.</p>
+            <h3>Portfolio Webite</h3>
+            <p>Developed using primarily ReactJS with use of useEffect and useState along with AOS animations for code simplicity. Applied responsive web design techniques and UI/UX principles. A basic but functioning Porfolio Website.</p>
             <div className="Projects-card-techstack">
               <p>React</p><p>HTML</p><p>CSS</p><p>Javascript</p>
             </div>

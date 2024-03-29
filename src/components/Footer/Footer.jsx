@@ -1,13 +1,19 @@
 import React from 'react';
 import './footer.css';
+import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000, once: true })
+  }, [])
   return (
     <div className='Footer__parent'>
-    <h1>Let's Connect</h1>
+    <h1 data-aos="fade-right">Let's Connect</h1>
     <div id='Contacts' className='Footer'>
       
-      <div className='Footer__first-section'>
+      <div data-aos="fade-up" className='Footer__first-section'>
         <h2>JF Marticio</h2>
         <div className='first-section-email'>
           <i className="fa-regular fa-envelope"></i>
@@ -20,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='Footer__contacts-section'>
+      <div data-aos="fade-up" className='Footer__contacts-section'>
         <h2>Contact me Via</h2>
         <div className='contacts-section-links'>
           <a href='https://www.facebook.com/DanamesBlitz.21' target='_blank'><i className="fa-brands fa-facebook fa-xl"></i></a>
@@ -30,13 +36,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='Footer__source-codes'>
+      <div data-aos="fade-up" className='Footer__source-codes'>
         <h2>My Codes</h2>
         <a href='https://github.com/Blitzz21?tab=repositories' target='_blank'><i className="fa-brands fa-github fa-2xl"></i></a>
       </div>
 
     </div>
-    <div className='copyright'>
+    <div data-aos="fade-up" className='copyright'>
       <p>Copyright © 2024 John Floyd Marticio. All rights reserved</p>
     </div>
     </div>
