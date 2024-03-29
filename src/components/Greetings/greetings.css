@@ -36,9 +36,7 @@
     font-weight: 800;
 }
 
-
-
-button {
+.Greetings__contact-button button {
     display: flex;
     padding: 20px 45px;
     border-radius: 50px;
@@ -58,7 +56,7 @@ button {
     color: #fefefe;
 }
 
-button:hover {
+.Greetings__contact-button button:hover {
     transition: 1s ease;
     scale: 1.1;
     background-position: right center;

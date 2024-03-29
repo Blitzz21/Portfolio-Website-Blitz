@@ -18,7 +18,7 @@ const Greetings = () => {
     </div>
 
     <div className='Greetings__contact-button'
-      ><button type="button">Contact Me</button>
+      ><button data-aos="zoom-in" type="button">Contact Me</button>
     </div>
   </div>
   )
