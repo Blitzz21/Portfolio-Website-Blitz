@@ -13,8 +13,8 @@
     text-align: left;
     align-items: center;
     justify-content: center;
+    height: 100dvh;
     padding: 100px;
-    margin-top: 100px;
 
     font-family: "Poppins";
     line-height: 4.8rem;
@@ -30,31 +30,65 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    padding: 100px;
     margin-bottom: 50px;
    
     font-size: 5rem;
     font-weight: 800;
 }
 
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .Greetings__contact-button button {
     display: flex;
-    padding: 20px 45px;
+    padding: 25px 15px;
     border-radius: 50px;
     outline: none;
     border: none;
     margin-bottom: 40px;
+    margin-right: 10px;
 
     background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
     box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
     display: block;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fefefe;
 }
+
+    .Greetings__download-cv {
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        outline: none;
+        border: 2px solid #1f1f1f;
+        margin-bottom: 40px;
+    }
+
+    .Greetings__download-cv a {
+        padding: 5px 15px;
+        color: #1f1f1f;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .Greetings__download-cv:hover {
+        transition: 0.5s all;
+        background-color: #1f1f1f;
+    }
+
+    .Greetings__download-cv a:hover {
+        transition: 0.5s all;
+        color: #efefef;
+    }
 
 .Greetings__contact-button button:hover {
     transition: 1s ease;
@@ -63,16 +97,37 @@
     color: #fff;
 }
 
-@media (max-width: 768px) {
-    button {
-        padding: 5px 15px;
-        font-size: 1.3rem;
+@media (max-width: 848px) {
+    .buttons-container {
+        margin-top: -50px;
+        margin-bottom: 200px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+    .buttons-container {
+        margin-top: -100px;
+    }
+
+    .Greetings__download-cv a {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 5px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 522px) {
+
+    .buttons-container {
+        flex-direction: column;
+    }
+
     .Greetings {
         margin-top: 50px;
+        padding: 0;
     }
 
     .p-container {
@@ -87,9 +142,14 @@
     }
 
     button {
-        font-size: 1.1rem;
-        padding: 5px 5px;
+        font-size: 0.5rem;
+        padding: 0;
         justify-content: center;
         align-items: center;
     }
+
+    .Greetings__contact-button {
+        font-size: 5px;
+    }
+
 }

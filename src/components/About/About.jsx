@@ -7,6 +7,7 @@ import cssLogo from '../About/icons/css.svg'
 import jsLogo from '../About/icons/js.svg'
 import javaLogo from '../About/icons/java.svg'
 import pythonLogo from '../About/icons/python.svg'
+import jqueryLogo from '../About/icons/jquery.svg'
 
 import { useEffect } from 'react'
 import AOS from 'aos';
@@ -33,7 +34,78 @@ const About = () => {
               <img data-aos="fade" src={jsLogo} alt="js Logo" />
               <img data-aos="fade" src={javaLogo} alt="java Logo" />
               <img data-aos="fade" src={pythonLogo} alt="python Logo" />
+              <img data-aos="fade" src={jqueryLogo} alt="jquery Logo" />
             </div>
+          </div>
+        </section>
+
+        <section className='About__about-me-skills'>
+          <div> 
+            <h1 className='About__about-me-skills-title' data-aos="fade">Technical Skills: </h1>
+          </div>
+          
+          <div className='About__Techskills'>
+            
+            <div data-aos="fade" className='Techskill__htmlcss' style={{padding: 10}}>
+              <p>HTML/CSS</p>
+              <p>90%</p>
+                <div className='container-progress'>
+                  <div className='progressbar'>
+                    <div className='progress'></div>
+                  </div>
+                </div>
+            </div>
+
+            <div data-aos="fade" className='Techskill__javascript' style={{padding: 10}}>
+              <p>Javascript</p>
+              <p>30%</p>
+                <div className='container-progress'>
+                  <div className='progressbar'>
+                    <div className='progress' style={{width: 30}}></div>
+                  </div>
+                </div>
+            </div>
+
+            <div data-aos="fade" className='Techskill__react' style={{padding: 10}}>
+              <p>React</p>
+              <p>30%</p>
+                <div className='container-progress'>
+                  <div className='progressbar'>
+                    <div className='progress' style={{width: 30}}></div>
+                  </div>
+                </div>
+            </div>
+
+            <div data-aos="fade" className='Techskill__python' style={{padding: 10}}>
+              <p>Python</p>
+              <p>40%</p>
+                <div className='container-progress'>
+                  <div className='progressbar'>
+                    <div className='progress' style={{width: 40}}></div>
+                  </div>
+                </div>
+            </div>
+
+            <div data-aos="fade" className='Techskill__java' style={{padding: 10}}>
+              <p>Java</p>
+              <p>50%</p>
+                <div className='container-progress'>
+                  <div className='progressbar'>
+                    <div className='progress'  style={{width: 50}}></div>
+                  </div>
+                </div>
+            </div>
+
+            <div data-aos="fade" className='Techskill__jquery' style={{padding: 10}}>
+              <p>jQuery</p>
+              <p>30%</p>
+                <div className='container-progress'>
+                  <div className='progressbar'>
+                    <div className='progress'  style={{width: 30}}></div>
+                  </div>
+                </div>
+            </div>
+
           </div>
         </section>
     </div>

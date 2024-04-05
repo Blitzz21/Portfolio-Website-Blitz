@@ -45,6 +45,7 @@
 .About__tech-stack{
     display: block;
     width: 30%;
+    border-radius: 25px;
     margin-right: 20px;
 
     background: rgba(255,255,255,0.05);
@@ -74,6 +75,51 @@
     scale: 55%;
     transition: all 0.3s;
     cursor: pointer;
+  }
+
+  .About__about-me-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    flex-wrap: wrap;
+
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+
+  .About__Techskills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .About__Techskills p {
+    color: #efefef;
+    display: inline;
+  }
+
+  .container-progress {
+    width: 200px;
+  }
+
+  .progressbar {
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: lightgrey;
+  }
+
+  .progress {
+    border-radius: 25px;
+    background-color: aqua;
+    height:10px;
+    width:90%
   }
 
   .About__education {

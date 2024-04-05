@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
 
     </div>
-    <div data-aos="fade-up" className='copyright'>
+    <div className='copyright'>
       <p>Copyright © 2024 John Floyd Marticio. All rights reserved</p>
     </div>
     </div>
