@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     height: 100dvh;
-    padding: 100px;
+    padding-top: 3rem;
 
     font-family: "Poppins";
     line-height: 4.8rem;
@@ -22,18 +22,20 @@
 
 .Greetings__first-p,
 .Greetings__second-p {
-    line-height: 6rem;
+    padding: 0;
     margin-bottom: 50px;
+    line-height: 4rem;
 }
 
 .p-container {
     display: flex;
+    height: 100dvh;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding: 100px;
-    margin-bottom: 50px;
    
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
 }
 
@@ -42,10 +44,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
+    font-size: 0.8rem;
 }
 
 .Greetings__contact-button button {
-    display: flex;
+    display: block !important;
     padding: 25px 15px;
     border-radius: 50px;
     outline: none;
@@ -58,7 +62,6 @@
     background-size: 200% auto;
     color: white;            
     box-shadow: 0 0 20px #eee;
-    display: block;
 
     font-size: 1.5rem;
     color: #fefefe;
@@ -67,6 +70,7 @@
     .Greetings__download-cv {
         display: flex;
         justify-content: center;
+        align-items: center;
         border-radius: 50px;
         outline: none;
         border: 2px solid #1f1f1f;
@@ -74,6 +78,7 @@
     }
 
     .Greetings__download-cv a {
+        display: block !important;
         padding: 5px 15px;
         color: #1f1f1f;
         font-size: 1.5rem;
@@ -81,75 +86,45 @@
     }
 
     .Greetings__download-cv:hover {
-        transition: 0.5s all;
+        transition: 0.5s ease;
         background-color: #1f1f1f;
     }
 
     .Greetings__download-cv a:hover {
-        transition: 0.5s all;
+        transition: 0.5s ease;
         color: #efefef;
     }
 
 .Greetings__contact-button button:hover {
-    transition: 1s ease;
+    transition: 0.5s ease;
     scale: 1.1;
     background-position: right center;
     color: #fff;
 }
 
-@media (max-width: 848px) {
-    .buttons-container {
-        margin-top: -50px;
-        margin-bottom: 200px;
+@media (min-width: 769px) {
+    .p-container {
+        padding: 100px;
     }
 }
 
 @media (max-width: 768px) {
-    .buttons-container {
-        margin-top: -100px;
-    }
-
-    .Greetings__download-cv a {
-        font-size: 1rem;
-    }
-
-    button {
-        padding: 5px 15px;
-        font-size: 0.8rem;
+    .p-container {
+        text-align: center;
     }
 }
 
-@media (max-width: 522px) {
-
-    .buttons-container {
-        flex-direction: column;
-    }
-
-    .Greetings {
-        margin-top: 50px;
-        padding: 0;
-    }
-
+@media (max-width: 375px) {
     .p-container {
-        font-size: 2rem;
-    }
-
-    .Greetings__first-p,
-    .Greetings__second-p {
-        text-align: center;
-        line-height: 4rem;
         font-size: 3rem;
+        text-align: center;
     }
 
-    button {
-        font-size: 0.5rem;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
+    .Greetings__download-cv a {
+        font-size: 0.8rem;
     }
 
-    .Greetings__contact-button {
-        font-size: 5px;
+    .Greetings__contact-button button {
+        font-size: 1rem;
     }
-
 }
