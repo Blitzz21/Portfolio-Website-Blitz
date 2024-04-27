@@ -39,6 +39,10 @@
     font-weight: 800;
 }
 
+.p-container span {
+    color: #79CBCA;
+}
+
 .buttons-container {
     display: flex;
     flex-direction: row;
